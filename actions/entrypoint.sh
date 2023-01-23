@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "cd $HOME/markdown && make"
+sh -c "cd $HOME/resume && make"
