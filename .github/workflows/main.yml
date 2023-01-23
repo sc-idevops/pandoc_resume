@@ -32,5 +32,21 @@ jobs:
           # Artifact name
           name: Resume PDF # optional, default is artifact
           # A file, directory or wildcard pattern that describes what to upload
-          path: output/resume.*
+          path: output/*.pdf
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          # Artifact name
+          name: Resume DOCX # optional, default is artifact
+          # A file, directory or wildcard pattern that describes what to upload
+          path: output/*.docx
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          # Artifact name
+          name: Resume HTML # optional, default is artifact
+          # A file, directory or wildcard pattern that describes what to upload
+          path: output/*.html
 
