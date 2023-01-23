@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "cd $HOME/resume && make"
+sh -c "cd /home/app/resume && make"
