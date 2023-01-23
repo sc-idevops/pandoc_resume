@@ -1,100 +1,154 @@
-Johnny Coder
+Stephen M Card
 ============
 
-----
+> <stephenmcard@gmail.com> - 814-572-0798
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+> 2118 Shadyside Rd. Clymer, NY 14724
 
 ----
+
+Aspiring DevOps engineer who has had a natural aptitude with technology since grade school, but never had the right opportunity to enter the Information Technology sector. Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT. Constantly intrigued by new technology, and endeavors to learn more and improve.
+
+----
+
+Certifications
+---------
+
+**Terraform Associates Certification:** 2022-07
+
+**Certified Kubernetes Administrator** 2023-02 (Expected)
+
+
+Work History
+----------
+
+**DevOps Engineer:** 2022-01 - Current
+
+*iDevops, Online*
+
+*DevOps:*
+
+- Built a foundation on the CI/CD software lifecycle and the fundamentals of DevOps methodology.
+- Rapidly adapted to new technologies introduced in the program both through self-education and class time.
+- Documented project status and description on Confluence and updated JIRA tickets.
+- Self-taught numerous technologies to implement DevOps tasks as part of various open-source projects at iDevOps.io.
+- Responsible for completing online learning resources such as CodeCademy (Python, Command Line, Bash and HTML) to build requisite knowledge for daily learning rooms and status update meetings.
+
+*Work Environment:*
+
+- Mentored many other interns in technologies such as: Kubernetes, Python, Docker, Bash.
+- Maintained positive work/learning atmosphere by building relationships with fellow interns and other senior engineers.
+- Answered questions and taught several other interns how read error messages & diagnose failures when deploying on Github actions.
+
+*Docker:*
+
+- Built Docker Images and deployed into an AWS Kubernetes cluster for: 
+  - bitnami/Nginix and Kibana
+- Created Jenkins Dockerfile from Scratch.
+  - Setup simple Hello-world pipeline in Jenkins to test Docker deployment of Jenkins.
+- Created Redis Dockerfile from Scratch.
+  - Setup Redis test script in python to test Docker deployment of Redis.
+
+*Terraform/Ansible:*
+
+- Deployed Terraform Infrastructure-as-code to automatically create: 
+  - Azure Data Blob Storage, Azure Kubernetes Cluster, and Azure Data Factory
+- Wrote terraform to deploy s3 buckets in AWS with lifecycle options
+- Wrote terraform to build and deploy virtual machine for nginx server in AWS.
+- Wrote terraform to setup IAM role and policy for reading and writing from s3 bucket.
+- Wrote Terraform module to deploy an AWS SQS service and queues, along with custom Python script for testing SQS deployment.
+- Wrote terraform to deploy a ec2 instance with a security group that allows ports 80 and 22.
+  - Created ansible playbook that configured the ec2 instance to run python api by installing python, cloning repository and setting up nginx reverse proxy to server gunicorn on port 80.
+- Deployed and validated python api application with ansible and terraform.
+
+*Git/Github:*
+
+- Enforced version control best practices, including pruning over 100 dead branches from Github repositories, and secrets management.
+- Developed a Github Actions Pipeline step to ensure users could be automatically logged in with their Azure credentials, and ensured these credentials were protected using Github secrets.
+- Refined a Github Actions pipeline to list existing deployments in a combo box to reduce user error for pipeline input.
+- Converted a Github reusable action cluster from docker type to composite type (for better code re-usability) which pulled the kube configuration for an AWS Kubernetes.
+- Converted a Github reusable action from docker type to composite type that validated a successful rollout of a deployment on an AWS Kubernetes cluster.
+- Wrote a Github reusable action that scans a docker image using Google’s new Open Source Vulnerability Scanner.
+
+*Kubernetes:*
+
+- Co-Developed a web project that generates a Kubernetes deployment file based on user inputted criteria.
+- Created an AWS Kubernetes ingress controller for xtermjs
+- Analyzed and troubleshoot issues with Kubernetes deployments when testing deployments for open source automation catalog including: persistent volume mount issues, ingress controller issues, services accessibility issues and more.
+- Created bash script to audit Kubernetes pods for liveness probes, readiness probes, and resource limits/requests and then reported which pods had probes in their spec.
+- Created python script to produce audit report of Kubernetes pod report of if liveness and readiness probes are enabled as well as if resource requests and limit are enabled.
+
+*Linux/Bash:*
+
+- Strong background in Linux including: shell scripting (bash), git, package management, and general system administration.
+- Wrote Python script to scrape text from a website and parse it using the Beautifulsoup library to find specific data from the website.
+- Wrote a Python script that recursively looped over the file system searching for specific files and made a list report of those files.
+- Wrote Bash Script to take website as input and curl the input as data for automation.
+- Wrote a Bash Script to make a report of all resources in all subscriptions and resources groups within Azure utilizing the Azure CLI.
+- Wrote a Bash Script to install Nginx on a Ubuntu machine and update the default HTML file with a pre-built file automating the standup and serving of a basic html file.
+- Wrote Python script to retrieve JSON payloads from REST API.
+- Synchronized package installation states over several servers using Ansible.
+- Create script to pull password for use in pipeline using bash. Read from password.idevops.io and save to variable.
+- Created bash script to template replace variables in config files using environment variables.
+- Created AWS command to list out all AWS resources using AWS cli and JQ
+- Delete AWS cloud 9 resource using AWS CLI (environment cleanup)
+- Created bash script that dynamically creates terraform to deploy AWS ec2 instances with prompts based on input.
+
+*Redis Project:*
+
+- Installed Redis Via Helm and tested functionality through Kubernetes port forwarding.
+- Wrote python script to test password protected Redis utilizing Kubernetes port forwarding through local host.
+- Created and modified values.yaml file to change Redis helm chart service type from ClusterIP to LoadBalancer in order to test through public internet.
+- Wrote python script to test password protected Redis utilizing Kubernetes load balancer.
+- Wrote Terraform to deploy AWS VPC with 3 subnets: 1 public, 2 private, with a layer networking setup routing traffic through internet gateway to setup segregated networking layer for application stack.
+- Wrote Terraform to deploy pay_per_request dynamoDB table for test application in AWS.
+- Wrote Terraform to deploy custom ECR's on demand for test application docker images in AWS.
+
+*Django Project (Codename Thoughts):*
+
+- Built a Django based website that allows users to login/sign up and post thoughts like twitter
+- Containerized the Django site into a custom docker image and uploaded it to Docker Hub.
+- Built Kubernetes deployment manifest to deploy the Django site into Kubernetes.
+- Created Github Action Pipeline to Build, Scan, and Deploy the custom Docker Image using CI/CD into Kubernetes.
+- Created MYSQL sidecar for local network database to implement persistent storage for the Django website.
+- Created separate deployment with persistent data of MySQL to reference using Kubernetes DNS for Django project.
+- Created new pipeline steps to deploy MySQL for Django project.
+- Setup Django to use Redis for login caching for load balanced Django services using Kubernetes DNS to reference Redis.
+- Created deployment and service for Redis and added steps to the project pipeline
+- Troubleshot why MySQL wasn't starting correctly and resolved issue with deployment manifest which was referencing the wrong port.
+- Created Django unit tests for Django app to have 100% code coverage
+- Add functionality to CI/CD pipeline to deploy Django app that starts ephemeral test infrastructure using docker in the git action pipeline to start MySQL and Redis for the Django unit tests to utilize before building docker image.
+- Added ZAProxy Scan to Django deployment pipeline to test OWASP vulnerabilities and fail pipeline on failed scans.
+- Added automatic route53 domain name updating in the pipeline to deploy route53 dns for the Django website.
+- Added automatic SSL generation using cert-manager to our ingress for Django project to serve site on https endpoint
+- Implement regression/UE testing for Django site functionality.
+- Troubleshooting errors in pipeline, ephemeral environments, and UE regression testing to make full CI pipeline work.
+
+
+**Office Administrator:** 2016-07 - Current
+
+*Howard & Associates Real Estate, Findley Lake, NY*
+
+- Automated generation of forms by using word templates and fields.
+- Semi-Automated Quickbooks bank reconciliations by centralizing data sources and financial information entry.
+- Maintained company's online presence and real estate listings across multiple websites.
+- Established data backup policy for all computers in office.
+
+**Information Technology Specialist:** 2015-07 - Current
+
+*YMCA Of Corry, Corry, PA*
+
+- Developed and enforced policy to ensure safety of user data and security of systems.
+- Networking expansion from basic DSL to a central switch with various access points across the complex.
+- Completely replaced outdated technology with currently supported desktop systems.
+- Deployed digital advertising boards to keep customers updated on company events.
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+**Bachelor of Science: Computer Science**: 2007-09 - 2011-12
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+*SUNY Fredonia - Fredonia, NY*
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
-
-Experience
-----------
-
-**Your Most Recent Work Experience:**
-
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
-
-* First item
-
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
-
-**That Other Job You Had**
-
-Also with a short description.
-
-Technical Experience
---------------------
-
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
-
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
-
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
-
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
-----------------------------------------
-
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
-
-----
-
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+* Dean's List Fall 2007 & Fall 2008
+* Elected to Vice President of Service for Alpha Phi Omega, Community Service Fraternity
