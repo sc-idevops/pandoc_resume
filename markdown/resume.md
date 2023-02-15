@@ -16,7 +16,7 @@ Certifications
 
 **Terraform Associates Certification:** 2022-07
 
-**Certified Kubernetes Administrator** 2023-02 (Expected)
+**Certified Kubernetes Administrator** 2023-03 (Expected)
 
 
 Work History
@@ -104,7 +104,7 @@ Work History
 - Wrote Terraform to deploy pay_per_request dynamoDB table for test application in AWS.
 - Wrote Terraform to deploy custom ECR's on demand for test application docker images in AWS.
 
-*Django Project (Codename Thoughts):*
+[*Django Project (Codename Thoughts):*](https://github.com/iDevOps-io/thoughts-sc)
 
 - Built a Django based website that allows users to login/sign up and post thoughts like twitter
 - Containerized the Django site into a custom docker image and uploaded it to Docker Hub.
@@ -123,6 +123,11 @@ Work History
 - Added automatic SSL generation using cert-manager to our ingress for Django project to serve site on https endpoint
 - Implement regression/UE testing for Django site functionality.
 - Troubleshooting errors in pipeline, ephemeral environments, and UE regression testing to make full CI pipeline work.
+
+[*k8 Softner Project:*](http://k8ssoftner.idevops.io/)
+- Designed a webapp that takes user input from a javascript frontend and generates a deployable kubernetes manifest through a python backend
+- python backend processes a JSON payload dynamically through an API
+- Capable of processing replicas, secrets, persistent volume claims, and probes
 
 
 **Office Administrator:** 2016-07 - Current
