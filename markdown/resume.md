@@ -125,7 +125,8 @@ Work History
 - Troubleshooting errors in pipeline, ephemeral environments, and UE regression testing to make full CI pipeline work.
 
 [*k8 Softner Project:*](http://k8ssoftner.idevops.io/)
-- Designed a webapp that takes user input from a javascript frontend and generates a deployable kubernetes manifest through a python backend
+
+- Designed a webapp that takes user input from a javascript frontend generates a deployable kubernetes manifest through a python backend
 - python backend processes a JSON payload dynamically through an API
 - Capable of processing replicas, secrets, persistent volume claims, and probes
 
