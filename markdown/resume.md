@@ -5,9 +5,15 @@ Stephen M Card
 
 > 2118 Shadyside Rd. Clymer, NY 14724
 
+> [GitHub](https://github.com/sc-idevops)
+
+> [LinkedIn](https://www.linkedin.com/in/stephenmcard/)
+
 ----
 
-Aspiring DevOps engineer who has had a natural aptitude with technology since grade school, but never had the right opportunity to enter the Information Technology sector. Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT. Constantly intrigued by new technology, and endeavors to learn more and improve.
+Open Source DevOps Engineer who has had a natural aptitude with technology since grade school. 
+Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT. 
+Constantly intrigued by new technology, and endeavors to learn more and improve.
 
 ----
 
@@ -32,7 +38,7 @@ Work History
 - Rapidly adapted to new technologies introduced in the program both through self-education and class time.
 - Documented project status and description on Confluence and updated JIRA tickets.
 - Self-taught numerous technologies to implement DevOps tasks as part of various open-source projects at iDevOps.io.
-- Responsible for completing online learning resources such as CodeCademy (Python, Command Line, Bash and HTML) to build requisite knowledge for daily learning rooms and status update meetings.
+- Responsible for completing online learning resources in 10 weeks, such as CodeCademy (Python, Command Line, Bash and HTML) to build requisite knowledge for daily learning rooms and status update meetings.
 
 *Work Environment:*
 
@@ -40,18 +46,30 @@ Work History
 - Maintained positive work/learning atmosphere by building relationships with fellow interns and other senior engineers.
 - Answered questions and taught several other interns how read error messages & diagnose failures when deploying on Github actions.
 
-*Docker:*
+*Docker & Kubernetes:*
 
-- Built Docker Images and deployed into an AWS Kubernetes cluster for: 
+- Built Docker Images and deployed into an AWS Kubernetes cluster as a test for: 
   - bitnami/Nginix and Kibana
 - Created Jenkins Dockerfile from Scratch.
   - Setup simple Hello-world pipeline in Jenkins to test Docker deployment of Jenkins.
-- Created Redis Dockerfile from Scratch.
-  - Setup Redis test script in python to test Docker deployment of Redis.
+- Created an AWS Kubernetes ingress controller for xtermjs as a test.
+- Co-Developed a web project that generates a Kubernetes deployment file based on user inputted criteria.
+- Analyzed and troubleshoot issues with Kubernetes deployments when testing deployments for open source automation catalog including: persistent volume mount issues, ingress controller issues, services accessibility issues and more.
+- Created bash script to audit Kubernetes pods for liveness probes, readiness probes, and resource limits/requests and then reported which pods had probes in their spec.
+- Created python script to produce audit report of Kubernetes pod report of if liveness and readiness probes are enabled as well as if resource requests and limit are enabled.
 
-*Terraform/Ansible:*
+*Github & Pipelines:*
 
-- Deployed Terraform Infrastructure-as-code to automatically create: 
+- Enforced version control best practices, including pruning over 100 dead branches from Github repositories, and secrets management.
+- Developed a Github Actions Pipeline step to ensure users could be automatically logged in with their Azure credentials, and ensured these credentials were protected using Github secrets.
+- Refined a Github Actions pipeline to list existing deployments in a combo box to reduce user error for pipeline input.
+- Converted a Github reusable action cluster from docker type to composite type (for better code re-usability) which pulled the kube configuration for an AWS Kubernetes.
+- Converted a Github reusable action from docker type to composite type that validated a successful rollout of a deployment on an AWS Kubernetes cluster.
+- Wrote a Github reusable action that scans a docker image using Google’s new Open Source Vulnerability Scanner.
+
+*Terraform & Ansible:*
+
+- Deployed Terraform Infrastructure-as-code to automatically create the following for pipeline testing: 
   - Azure Data Blob Storage, Azure Kubernetes Cluster, and Azure Data Factory
 - Wrote terraform to deploy s3 buckets in AWS with lifecycle options
 - Wrote terraform to build and deploy virtual machine for nginx server in AWS.
@@ -61,24 +79,7 @@ Work History
   - Created ansible playbook that configured the ec2 instance to run python api by installing python, cloning repository and setting up nginx reverse proxy to server gunicorn on port 80.
 - Deployed and validated python api application with ansible and terraform.
 
-*Git/Github:*
-
-- Enforced version control best practices, including pruning over 100 dead branches from Github repositories, and secrets management.
-- Developed a Github Actions Pipeline step to ensure users could be automatically logged in with their Azure credentials, and ensured these credentials were protected using Github secrets.
-- Refined a Github Actions pipeline to list existing deployments in a combo box to reduce user error for pipeline input.
-- Converted a Github reusable action cluster from docker type to composite type (for better code re-usability) which pulled the kube configuration for an AWS Kubernetes.
-- Converted a Github reusable action from docker type to composite type that validated a successful rollout of a deployment on an AWS Kubernetes cluster.
-- Wrote a Github reusable action that scans a docker image using Google’s new Open Source Vulnerability Scanner.
-
-*Kubernetes:*
-
-- Co-Developed a web project that generates a Kubernetes deployment file based on user inputted criteria.
-- Created an AWS Kubernetes ingress controller for xtermjs
-- Analyzed and troubleshoot issues with Kubernetes deployments when testing deployments for open source automation catalog including: persistent volume mount issues, ingress controller issues, services accessibility issues and more.
-- Created bash script to audit Kubernetes pods for liveness probes, readiness probes, and resource limits/requests and then reported which pods had probes in their spec.
-- Created python script to produce audit report of Kubernetes pod report of if liveness and readiness probes are enabled as well as if resource requests and limit are enabled.
-
-*Linux/Bash:*
+*Linux & Scripting:*
 
 - Strong background in Linux including: shell scripting (bash), git, package management, and general system administration.
 - Wrote Python script to scrape text from a website and parse it using the Beautifulsoup library to find specific data from the website.
