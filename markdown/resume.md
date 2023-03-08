@@ -10,10 +10,7 @@ Stephen M Card
 > [LinkedIn](https://www.linkedin.com/in/stephenmcard/)
 
 ----
-
-Open Source DevOps Engineer who has had a natural aptitude with technology since grade school. 
-Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT. 
-Constantly intrigued by new technology, and endeavors to learn more and improve.
+DevOps Engineer with a background in applying complex logic for automating and optimizing the software development life cycle. Proficient in various tools and technologies such as AWS, Kubernetes, Docker, Terraform, Ansible to create efficient, scalable, and secure systems. Adept at utilizing scripting and automation principles to streamline workflows and improve efficiency. Established track record of designing and building CI/CD pipelines, setting up infrastructure through IaC tools, and all things automation. Strong collaboration skills, emotional intelligence, ability to work in a fast-paced remote environment with an aptitude for problem solving. Looking to get into a challenging DevOps role that will push me to take my skills and knowledge to the next level.
 
 ----
 
