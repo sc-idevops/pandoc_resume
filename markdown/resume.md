@@ -11,8 +11,9 @@ Stephen M Card
 
 ----
 
-Open Source DevOps Engineer who has had a natural aptitude with technology since grade school. 
-Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT. 
+Open Source DevOps Engineer who has had a natural aptitude with technology since grade school.
+Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT.
+
 Constantly intrigued by new technology, and endeavors to learn more and improve.
 
 ----
@@ -22,7 +23,7 @@ Certifications
 
 **Terraform Associates Certification:** 2022-07
 
-**Certified Kubernetes Administrator** 2023-03 (Expected)
+**Certified Kubernetes Administrator** 2023-04 (Expected)
 
 
 Work History
@@ -49,23 +50,26 @@ Work History
 *Docker & Kubernetes:*
 
 - Built Docker Images and deployed into an AWS Kubernetes cluster as a test for: 
-  - bitnami/Nginix and Kibana
+  - bitnami/nginx and Kibana
 - Created Jenkins Dockerfile from Scratch.
   - Setup simple Hello-world pipeline in Jenkins to test Docker deployment of Jenkins.
 - Created an AWS Kubernetes ingress controller for xtermjs as a test.
-- Co-Developed a web project that generates a Kubernetes deployment file based on user inputted criteria.
+- Co-Developed a web project that generates a Kubernetes deployment file based on user inputted criteria. (See k8 Softner Project)
 - Analyzed and troubleshoot issues with Kubernetes deployments when testing deployments for open source automation catalog including: persistent volume mount issues, ingress controller issues, services accessibility issues and more.
-- Created bash script to audit Kubernetes pods for liveness probes, readiness probes, and resource limits/requests and then reported which pods had probes in their spec.
-- Created python script to produce audit report of Kubernetes pod report of if liveness and readiness probes are enabled as well as if resource requests and limit are enabled.
+- Created [bash scripts](https://github.com/sc-idevops/devops-notes/tree/master/class-podcheck) to audit Kubernetes pods for liveness probes, readiness probes, and resource limits/requests and then reported which pods had probes in their spec.
+- Created [a python script](https://github.com/sc-idevops/devops-notes/blob/master/class-podcheck/liveliness.py) to produce audit report of Kubernetes pod report of if liveness and readiness probes are enabled as well as if resource requests and limit are enabled.
+- Deployed the [Kubernetes Dashboard](https://github.com/sc-idevops/devops-notes/tree/master/k8-dashboard) onto an AWS Cluster.
 
 *Github & Pipelines:*
 
 - Enforced version control best practices, including pruning over 100 dead branches from Github repositories, and secrets management.
 - Developed a Github Actions Pipeline step to ensure users could be automatically logged in with their Azure credentials, and ensured these credentials were protected using Github secrets.
 - Refined a Github Actions pipeline to list existing deployments in a combo box to reduce user error for pipeline input.
-- Converted a Github reusable action cluster from docker type to composite type (for better code re-usability) which pulled the kube configuration for an AWS Kubernetes.
-- Converted a Github reusable action from docker type to composite type that validated a successful rollout of a deployment on an AWS Kubernetes cluster.
-- Wrote a Github reusable action that scans a docker image using Google’s new Open Source Vulnerability Scanner.
+- Converted a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/commit/e4688060884fe237a888a936b575b8f5dc0df889#diff-a2044e9a351d077e351a69853991725cc81be47b86687cb285c50d34a153e6d2) from docker type to composite type (for better code re-usability) which pulled the kube configuration for an AWS Kubernetes.
+- Converted a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/commit/36fa72ffaf9e88654781460654def4a459df9336) from docker type to composite type that validated a successful rollout of a deployment on an AWS Kubernetes cluster.
+- Wrote a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/tree/main/kubernetes_deploy_helm_chart) that Deploys a Helm Chart into a Kubernetes Cluster.
+- Wrote a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/tree/main/docker_google_osv_scan) that scans a docker image using Google’s new Open Source Vulnerability Scanner.
+- Wrote a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/tree/main/aws_deploy_remote_terraform) that can deploy a terraform file to an AWS Kubernetes Cluster.
 
 *Terraform & Ansible:*
 
@@ -76,26 +80,36 @@ Work History
 - Wrote terraform to setup IAM role and policy for reading and writing from s3 bucket.
 - Wrote Terraform module to deploy an AWS SQS service and queues, along with custom Python script for testing SQS deployment.
 - Wrote terraform to deploy a ec2 instance with a security group that allows ports 80 and 22.
-  - Created ansible playbook that configured the ec2 instance to run python api by installing python, cloning repository and setting up nginx reverse proxy to server gunicorn on port 80.
-- Deployed and validated python api application with ansible and terraform.
+  - Created [ansible playbook](https://github.com/sc-idevops/devops-notes/tree/master/flask-ansible-task) that configured the ec2 instance to run python api by installing python, cloning repository and setting up nginx reverse proxy to server gunicorn on port 80.
+  - Deployed and validated python api application with ansible and terraform.
 
 *Linux & Scripting:*
 
 - Strong background in Linux including: shell scripting (bash), git, package management, and general system administration.
-- Wrote Python script to scrape text from a website and parse it using the Beautifulsoup library to find specific data from the website.
-- Wrote a Python script that recursively looped over the file system searching for specific files and made a list report of those files.
-- Wrote Bash Script to take website as input and curl the input as data for automation.
-- Wrote a Bash Script to make a report of all resources in all subscriptions and resources groups within Azure utilizing the Azure CLI.
-- Wrote a Bash Script to install Nginx on a Ubuntu machine and update the default HTML file with a pre-built file automating the standup and serving of a basic html file.
-- Wrote Python script to retrieve JSON payloads from REST API.
-- Synchronized package installation states over several servers using Ansible.
-- Create script to pull password for use in pipeline using bash. Read from password.idevops.io and save to variable.
-- Created bash script to template replace variables in config files using environment variables.
-- Created AWS command to list out all AWS resources using AWS cli and JQ
-- Delete AWS cloud 9 resource using AWS CLI (environment cleanup)
-- Created bash script that dynamically creates terraform to deploy AWS ec2 instances with prompts based on input.
 
-*Redis Project:*
+--*Python Scripts:*
+
+  - Wrote Python script to scrape text from a website and parse it using the Beautifulsoup library to find specific data from the website.
+  - Wrote a Python script that recursively looped over the file system searching for specific files and made a list report of those files.
+  - Wrote Python script to retrieve JSON payloads from REST API.
+
+--[*Bash Scripts:*](https://github.com/sc-idevops/devops-notes/tree/master/bash_examples)
+
+  - Wrote Bash Script to take website as input and curl the input as data for automation.
+  - Wrote a Bash Script to make a report of all resources in all subscriptions and resources groups within Azure utilizing the Azure CLI.
+  - Wrote a Bash Script to install Nginx on a Ubuntu machine and update the default HTML file with a pre-built file automating the standup and serving of a basic html file.
+  - Created bash script to template replace variables in config files using environment variables.
+  - Created bash script that dynamically creates terraform to deploy AWS ec2 instances with prompts based on input.
+  
+-- *Misc Scripting:*
+
+- Synchronized package installation states over several servers using [Ansible.](https://github.com/sc-idevops/devops-notes/tree/master/ansible)
+- Create script to pull password for use in pipeline using bash. Read from [password.idevops.io](password.idevops.io) and save to variable.
+- Created AWS command to list out all AWS resources using *the AWS cli and JQ*
+- Delete AWS cloud 9 resource using AWS CLI (environment cleanup)
+
+
+[*Redis Project:*](https://github.com/sc-idevops/devops-notes/tree/master/helm)
 
 - Installed Redis Via Helm and tested functionality through Kubernetes port forwarding.
 - Wrote python script to test password protected Redis utilizing Kubernetes port forwarding through local host.
@@ -127,9 +141,9 @@ Work History
 
 [*k8 Softner Project:*](http://k8ssoftner.idevops.io/)
 
-- Designed a webapp that takes user input from a javascript frontend generates a deployable kubernetes manifest through a python backend
-- python backend processes a JSON payload dynamically through an API
-- Capable of processing replicas, secrets, persistent volume claims, and probes
+- Designed a webapp that takes user input from a javascript frontend and generates a deployable kubernetes manifest through a python backend.
+- The Python backend processes a JSON payload dynamically through an API.
+- The app is capable of processing replicas, secrets, persistent volume claims, and probes.
 
 
 **Office Administrator:** 2016-07 - Current
