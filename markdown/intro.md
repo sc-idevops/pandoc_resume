@@ -3,22 +3,22 @@
 Greetings, I’m Stephen Card. I’ve always been interested in technology throughout my life, and have been searching for a way to make working with Linux and open source technologies my career.
 Back in January 2022, I enrolled in a program called iDevOps which was an excellent opportunity to make use of my interests in technology and the IT space and taking that next step in my career path.
 
-The program is divided up into two parts, with the first 10 weeks learning core technologies like: GIT, Bash, Python, Docker, Kubernetes, Terraform, Ansible, and cloud service providers such as: AWS and Azure.
+The program is divided up into two parts, with the first 10 weeks learning core technologies like: GIT, Bash, Python, Docker, Kubernetes, Terraform, Ansible; and cloud service providers such as: AWS and Azure. *(The usual suspects.)*
+
 After the initial 10 weeks you start doing DevOps project work for open source projects.
 I did this until I had about 500 story points worth of DevOps project work completed and have completed the: Certified Kubernetes Administrator Certification, and Certified Terraform Associate Certification.
 
-One of the most important concepts I learned at iDevOps is the **deductive problem solving method (the DPSM).**
+One of the most important concepts I learned at iDevOps is the **deductive problem solving method (the DPSM).** *(also known as Engineering 101)*
 This problem solving approach taught me how to adapt to and solve any engineering problem, by getting an overview of high level knowledge, breaking it down into steps, augmenting any missing knowledge I have through Google and other resources like stack overflow.
 
 My earliest tasks in the program involved building Docker images, Kubernetes Manifest, and Github Action pipelines to build and deploy infrastructure services in a templated way. These were infrastructure services like: MySql, Redis, Grafana and Prometheus, and more.
+
 These are in the process of being published as Composite GitHub Actions. This enables anyone to essentially copy and paste a step into their GitHub action pipelines and instantly build and deploy production quality infrastructure into their Kubernetes Clusters.
 
-Terraform was another dimension of the early work I did at iDevOps. I built Terraform templates that could be executed as catalog items, by
-leaveraging a Github repo as a stored catalog of Terraform templates that could be deployed and tested through a single pipeline by name reference.
-Once we tested our templates the goal is to convert them to composite GitHub actions that can be re-used by the community the same way we have with the Kubernetes manifests.
+Terraform and Infrastructre as Code was another dimension of the early work I did at iDevOps. I built Terraform templates that could be executed as catalog items, by leveraging a Github repo of Terraform templates that could be deployed and tested through a single pipeline by name in a catalog.
 
-We also learned and applied advanced DevOps automation principals building complete CI/CD pipelines.
-Pipelines that would:  
+Later I learned and applied advanced DevOps automation principals building complete CI/CD pipelines.
+These pipelines would:  
 
 - sonar scan,
 - unit test,
@@ -29,9 +29,8 @@ Pipelines that would:
 - validate successful deployment,
 - and finally, regression test the service
 
-That way every deployment was checked and validated at every step ensuring if the deployment wasn’t successful Kuberentes would roll-back to the old version.
-This allowed us to push constant updates to live services. This is actually what Microsoft does they push straight to production. This isn’t always a good thing but definitely it’s gaining some traction in the industry.
-The goal of proper CI/CD is to catch and fail early so you don’t accidentally deploy broken code and if you do it reverts back to good code to minimize downtime to the consumer.
+That way every deployment was checked and validated at every step ensuring if the deployment wasn’t successful Kuberentes would roll-back to the old version. The goal of proper CI/CD is to catch and fail early so you don’t accidentally deploy broken code and if you do it reverts back to good code to minimize downtime to the consumer.
+This also allowed us to push constant updates to live services. This is actually what Microsoft does they push straight to production *(which explains a lot)*. This isn’t always a good thing but definitely it’s gaining some traction in the industry.
 
 The project that I am the most proud of is a kubernetes manifest generator which you can access at <http://k8ssoftner.idevops.io> ​ (I didn't name it)
 The goal of this project is that anyone could easily create deployable kubernetes yaml files by filling out a form.

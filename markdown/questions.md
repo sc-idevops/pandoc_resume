@@ -1,4 +1,4 @@
-# Post Interview Questions:
+# Post Interview Questions
 
 1. What's daily life like?
 2. What tech stack do you use?
