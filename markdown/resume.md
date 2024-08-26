@@ -23,13 +23,34 @@ Certifications
 
 **Terraform Associates Certification:** 2022-07
 
-**Certified Kubernetes Administrator** 2023-04 (Expected)
-
 
 Work History
 ----------
 
-**DevOps Engineer:** 2022-01 - Current
+**DevOps Engineer:** 2024-04 - Current
+
+*Insight Global, Contracted to PricewaterhouseCoopers International Limited
+
+- Change Management
+    - Deployed software through Azure pipelines
+    - Helped orchistrate testing with quality assurance teams
+
+- Incident Tickets
+    - Analyzed software and system failures
+    - Intermediary between subject matter specialists and end users requesting help
+    - Escalated tickets to the appropriate SMEs and ensured they were resolved in a timely manner
+    - 
+
+- Special Projects
+    - Health checks and alerting
+    - Automations for our own team's internal uses
+    -
+
+- General Administration
+    - Assisted deveopers needing special access to systems we managed
+    - 
+
+**DevOps Engineer:** 2022-01 - 2024-04
 
 *iDevops, Online*
 
