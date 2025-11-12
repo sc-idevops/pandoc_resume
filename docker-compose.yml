@@ -1,7 +1,4 @@
-version: '2'
-
 services:
-
   resume-make:
     build:
       context: .
@@ -10,4 +7,4 @@ services:
     entrypoint: /entrypoint.sh
     image: resume-make
     volumes:
-      - .:/home/app/resume:z
+      - /home/stev/Documents/pandoc_resume/:/data
