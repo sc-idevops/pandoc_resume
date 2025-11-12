@@ -34,6 +34,26 @@ Work History
 - Postgres SQL 
 - 
 
+- Change Management
+    - Deployed software through Azure pipelines
+    - Helped orchestrate testing with quality assurance teams
+
+- Incident Tickets
+    - Analyzed software and system failures
+    - Intermediary between subject matter specialists and end users requesting help
+    - Escalated tickets to the appropriate SMEs and ensured they were resolved in a timely manner
+    - 
+
+- Special Projects
+    - Health checks and alerting
+    - Automations for our own team's internal uses
+    -
+
+- General Administration
+    - Assisted developers needing special access to systems we managed
+    - 
+
+--- 
 
 **DevOps Engineer:** 2022-01 - 2023-04
 
@@ -151,6 +171,7 @@ Work History
 - The Python backend processes a JSON payload dynamically through an API.
 - The app is capable of processing replicas, secrets, persistent volume claims, and probes.
 
+--- 
 
 **Office Administrator:** 2016-07 - Current
 
@@ -160,6 +181,8 @@ Work History
 - Semi-Automated Quickbooks bank reconciliations by centralizing data sources and financial information entry.
 - Maintained company's online presence and real estate listings across multiple websites.
 - Established data backup policy for all computers in office.
+
+--- 
 
 **Information Technology Specialist:** 2015-07 - Current
 
