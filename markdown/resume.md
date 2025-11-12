@@ -10,7 +10,7 @@ Stephen M Card
 > [LinkedIn](https://www.linkedin.com/in/stephenmcard/)
 
 ----
-
+<!--- rewrite introduction --->
 Open Source DevOps Engineer who has had a natural aptitude with technology since grade school.
 Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT.
 
@@ -23,13 +23,19 @@ Certifications
 
 **Terraform Associates Certification:** 2022-07
 
-**Certified Kubernetes Administrator** 2023-04 (Expected)
-
 
 Work History
 ----------
 
-**DevOps Engineer:** 2022-01 - Current
+**Contracted DevOps Engineer - Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023-04 to Present**
+
+- Airflow
+- Kubernetes 
+- Postgres SQL 
+- 
+
+
+**DevOps Engineer:** 2022-01 - 2023-04
 
 *iDevops, Online*
 
