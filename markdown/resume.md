@@ -18,12 +18,6 @@ Constantly intrigued by new technology, and endeavors to learn more and improve.
 
 ----
 
-Certifications
----------
-
-**Terraform Associates Certification:** 2022-07
-
-
 Work History
 ----------
 
@@ -192,6 +186,13 @@ Work History
 - Networking expansion from basic DSL to a central switch with various access points across the complex.
 - Completely replaced outdated technology with currently supported desktop systems.
 - Deployed digital advertising boards to keep customers updated on company events.
+
+---------
+Certifications
+---------
+
+**Terraform Associates Certification:** 2022-07
+
 
 Education
 ---------
