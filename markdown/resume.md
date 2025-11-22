@@ -35,16 +35,14 @@ As part of the TechOps team, our primary responsibility is to serve as the stewa
 
 - Incident Tickets in Service NOW
     - Analyzed software and system failures that happened in Airflow DAG runs or with failed Kubernetes Pods.
-    - Intermediary between subject matter specialists (SMEs) and end users requesting help
-    - Escalated tickets to the appropriate SMEs and ensured they were resolved in a timely manner
+    - Intermediary between subject matter specialists (SMEs) and end users requesting help by escalating tickets to the appropriate SMEs and ensured they were resolved in a timely manner
     - Ensured compliance with requests for systems/database access
-
-- Special Projects
-    - Health checks and alerting
-    - Automations for our own team's internal uses
 
 - General Administration
     - Assisted developers needing special access to systems we managed, or to provide logging information to help with debugging
+    - Update or create new Standard Operating Procedures in Confluence as we find workarounds to recurring issues.  
+    - Health checks and alerting for critical systems
+    - Automations for our own team's internal uses
 
 --- 
 
@@ -52,7 +50,7 @@ As part of the TechOps team, our primary responsibility is to serve as the stewa
 
 *iDevops, Online*
 
-*DevOps:*
+*DevOps Foundations:*
 
 - Built a foundation on the CI/CD software lifecycle and the fundamentals of DevOps methodology.
 - Rapidly adapted to new technologies introduced in the program both through self-education and class time.
