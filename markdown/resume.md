@@ -11,41 +11,40 @@ Stephen M Card
 
 ----
 <!--- rewrite introduction --->
-Open Source DevOps Engineer who has had a natural aptitude with technology since grade school.
-Extensively experienced with helping smaller businesses, and ready to enter Enterprise level IT.
-
-Constantly intrigued by new technology, and endeavors to learn more and improve.
+Open Source DevOps Engineer specializing in automations and deployment pipelines. Current assignment specializes in Azure based cloud computing but the key core DevOps principles can be applied anywhere. 
 
 ----
 
 Work History
 ----------
 
-**Contracted DevOps Engineer - Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023-04 to Present**
+**Contracted DevOps Engineer with Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023-04 to Present**
 
-- Airflow
-- Kubernetes 
-- Postgres SQL 
-- 
+As part of the TechOps team, our primary responsibility is to serve as the stewards of the production environment for both the front end UI and back end stack. Techops does regular software deployments coordinating with the developers and quality assurance testing, while also helping end users with problem incidents that lower level support can't resolve. 
 
-- Change Management
-    - Deployed software through Azure pipelines
+- Tech Stack Highlights:
+  - Azure Cloud
+  - Airflow
+  - Kubernetes
+  - Postgres SQL
+
+- Change Management via Service NOW
+    - Deployed software through Azure pipelines according to runbook specifications
     - Helped orchestrate testing with quality assurance teams
+    - Maintained secrets inside Hachicorp vault
 
-- Incident Tickets
-    - Analyzed software and system failures
-    - Intermediary between subject matter specialists and end users requesting help
+- Incident Tickets in Service NOW
+    - Analyzed software and system failures that happened in Airflow DAG runs or with failed Kubernetes Pods.
+    - Intermediary between subject matter specialists (SMEs) and end users requesting help
     - Escalated tickets to the appropriate SMEs and ensured they were resolved in a timely manner
-    - 
+    - Ensured compliance with requests for systems/database access
 
 - Special Projects
     - Health checks and alerting
     - Automations for our own team's internal uses
-    -
 
 - General Administration
-    - Assisted developers needing special access to systems we managed
-    - 
+    - Assisted developers needing special access to systems we managed, or to provide logging information to help with debugging
 
 --- 
 
@@ -167,7 +166,7 @@ Work History
 
 --- 
 
-**Office Administrator:** 2016-07 - Current
+**Office Administrator:** 2016-07 - 2023-04
 
 *Howard & Associates Real Estate, Findley Lake, NY*
 
@@ -178,7 +177,7 @@ Work History
 
 --- 
 
-**Information Technology Specialist:** 2015-07 - Current
+**Information Technology Specialist:** 2015-07 - 2023-04
 
 *YMCA Of Corry, Corry, PA*
 
