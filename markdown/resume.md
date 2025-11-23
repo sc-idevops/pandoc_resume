@@ -88,11 +88,6 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 
 *Docker & Kubernetes:*
 
-- Built Docker Images and deployed into an AWS Kubernetes cluster as a test for: 
-  - bitnami/nginx and Kibana
-- Created Jenkins Dockerfile from Scratch.
-  - Setup simple Hello-world pipeline in Jenkins to test Docker deployment of Jenkins.
-- Created an AWS Kubernetes ingress controller for xtermjs as a test.
 - Co-Developed a web project that generates a Kubernetes deployment file based on user inputted criteria. (See k8 Softner Project)
 - Analyzed and troubleshoot issues with Kubernetes deployments when testing deployments for open source automation catalog including: persistent volume mount issues, ingress controller issues, services accessibility issues and more.
 - Created [bash scripts](https://github.com/sc-idevops/devops-notes/tree/master/class-podcheck) to audit Kubernetes pods for liveness probes, readiness probes, and resource limits/requests and then reported which pods had probes in their spec.
@@ -104,53 +99,30 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 - Enforced version control best practices, including pruning over 100 dead branches from Github repositories, and secrets management.
 - Developed a Github Actions Pipeline step to ensure users could be automatically logged in with their Azure credentials, and ensured these credentials were protected using Github secrets.
 - Refined a Github Actions pipeline to list existing deployments in a combo box to reduce user error for pipeline input.
-- Converted a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/commit/e4688060884fe237a888a936b575b8f5dc0df889#diff-a2044e9a351d077e351a69853991725cc81be47b86687cb285c50d34a153e6d2) from docker type to composite type (for better code re-usability) which pulled the kube configuration for an AWS Kubernetes.
-- Converted a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/commit/36fa72ffaf9e88654781460654def4a459df9336) from docker type to composite type that validated a successful rollout of a deployment on an AWS Kubernetes cluster.
-- Wrote a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/tree/main/kubernetes_deploy_helm_chart) that Deploys a Helm Chart into a Kubernetes Cluster.
-- Wrote a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/tree/main/docker_google_osv_scan) that scans a docker image using Google’s new Open Source Vulnerability Scanner.
-- Wrote a [Github reusable action](https://github.com/iDevOps-io/idevops-git-actions/tree/main/aws_deploy_remote_terraform) that can deploy a terraform file to an AWS Kubernetes Cluster.
+- Created and improved several github reusable actions including:
+  - validation of successful deployments
+  - scan a docker image with Google's Open Source Vulnerability Scanner
+  - deploy a terraform file to an AWS Kubernetes Cluster
 
 *Terraform & Ansible:*
 
 - Deployed Terraform Infrastructure-as-code to automatically create the following for pipeline testing: 
   - Azure Data Blob Storage, Azure Kubernetes Cluster, and Azure Data Factory
-- Wrote terraform to deploy s3 buckets in AWS with lifecycle options
-- Wrote terraform to build and deploy virtual machine for nginx server in AWS.
-- Wrote terraform to setup IAM role and policy for reading and writing from s3 bucket.
-- Wrote Terraform module to deploy an AWS SQS service and queues, along with custom Python script for testing SQS deployment.
 - Wrote terraform to deploy a ec2 instance with a security group that allows ports 80 and 22.
   - Created [ansible playbook](https://github.com/sc-idevops/devops-notes/tree/master/flask-ansible-task) that configured the ec2 instance to run python api by installing python, cloning repository and setting up nginx reverse proxy to server gunicorn on port 80.
   - Deployed and validated python api application with ansible and terraform.
 
 [*Redis Project:*](https://github.com/sc-idevops/devops-notes/tree/master/helm)
 
-- Installed Redis Via Helm and tested functionality through Kubernetes port forwarding.
-- Wrote python script to test password protected Redis utilizing Kubernetes port forwarding through local host.
-- Created and modified values.yaml file to change Redis helm chart service type from ClusterIP to LoadBalancer in order to test through public internet.
-- Wrote python script to test password protected Redis utilizing Kubernetes load balancer.
-- Wrote Terraform to deploy AWS VPC with 3 subnets: 1 public, 2 private, with a layer networking setup routing traffic through internet gateway to setup segregated networking layer for application stack.
-- Wrote Terraform to deploy pay_per_request dynamoDB table for test application in AWS.
-- Wrote Terraform to deploy custom ECR's on demand for test application docker images in AWS.
+- AWS Infrastructure as Code (IaC): Designed a secure AWS VPC architecture with segregated public/private subnets using Terraform, including the automated provisioning of DynamoDB tables and on-demand Elastic Container Registries (ECR).
+- Kubernetes & Helm Configuration: Deployed and customized Redis via Helm, modifying values.yaml configurations to transition service exposure strategies from ClusterIP to LoadBalancer for external access scenarios.
+- Automated Connectivity Testing: Developed Python automation scripts to validate password-protected Redis connectivity, executing tests against both local port-forwarding and public load balancer endpoints.
 
 [*Django Project (Codename Thoughts):*](https://github.com/iDevOps-io/thoughts-sc)
 
-- Built a Django based website that allows users to login/sign up and post thoughts like twitter
-- Containerized the Django site into a custom docker image and uploaded it to Docker Hub.
-- Built Kubernetes deployment manifest to deploy the Django site into Kubernetes.
-- Created Github Action Pipeline to Build, Scan, and Deploy the custom Docker Image using CI/CD into Kubernetes.
-- Created MYSQL sidecar for local network database to implement persistent storage for the Django website.
-- Created separate deployment with persistent data of MySQL to reference using Kubernetes DNS for Django project.
-- Created new pipeline steps to deploy MySQL for Django project.
-- Setup Django to use Redis for login caching for load balanced Django services using Kubernetes DNS to reference Redis.
-- Created deployment and service for Redis and added steps to the project pipeline
-- Troubleshot why MySQL wasn't starting correctly and resolved issue with deployment manifest which was referencing the wrong port.
-- Created Django unit tests for Django app to have 100% code coverage
-- Add functionality to CI/CD pipeline to deploy Django app that starts ephemeral test infrastructure using docker in the git action pipeline to start MySQL and Redis for the Django unit tests to utilize before building docker image.
-- Added ZAProxy Scan to Django deployment pipeline to test OWASP vulnerabilities and fail pipeline on failed scans.
-- Added automatic route53 domain name updating in the pipeline to deploy route53 dns for the Django website.
-- Added automatic SSL generation using cert-manager to our ingress for Django project to serve site on https endpoint
-- Implement regression/UE testing for Django site functionality.
-- Troubleshooting errors in pipeline, ephemeral environments, and UE regression testing to make full CI pipeline work.
+- Full-Stack Kubernetes Orchestration: Architected a scalable Django application using Docker and Kubernetes, integrating Redis for caching, MySQL sidecars for persistent storage, and automated SSL generation via cert-manager.
+- Advanced CI/CD Pipeline: Engineered a comprehensive GitHub Actions pipeline that spins up ephemeral Docker environments for integration testing, enforcing 100% code coverage prior to deployment.
+- Security & Network Automation: Implemented automated security gates using OWASP ZAProxy for vulnerability scanning and automated Route53 DNS record updates for seamless production releases.
 
 --- 
 
