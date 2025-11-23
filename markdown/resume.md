@@ -13,7 +13,11 @@ Stephen M Card
 
 Open Source DevOps Engineer with 10 years of experience specializing in automations and deployment pipelines. Linux user since 2007. Current assignment specializes in Azure based cloud computing but the key core DevOps principles can be applied anywhere. Known for streamlining deployment processes, improving infrastructure efficiency, and having excellent communication.
 
-----
+
+Certifications
+---------
+
+**Terraform Associates Certification:** 2022-07
 
 Skillset
 ----------
@@ -145,12 +149,6 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 - Networking expansion from basic DSL to a central switch with various access points across the complex.
 - Completely replaced outdated technology with currently supported desktop systems.
 - Deployed digital advertising boards to keep customers updated on company events.
-
----------
-Certifications
----------
-
-**Terraform Associates Certification:** 2022-07
 
 
 Education
