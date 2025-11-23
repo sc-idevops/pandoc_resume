@@ -10,23 +10,45 @@ Stephen M Card
 > [LinkedIn](https://www.linkedin.com/in/stephenmcard/)
 
 ----
-<!--- rewrite introduction --->
-Open Source DevOps Engineer specializing in automations and deployment pipelines. Current assignment specializes in Azure based cloud computing but the key core DevOps principles can be applied anywhere. 
+
+Open Source DevOps Engineer with 10 years of experience specializing in automations and deployment pipelines. Linux user since 2007. Current assignment specializes in Azure based cloud computing but the key core DevOps principles can be applied anywhere. Known for streamlining deployment processes, improving infrastructure efficiency, and having excellent communication.
 
 ----
+
+Skillset
+----------
+- System Monitoring
+- Infrastructure as Code
+- Container Orchestration
+- CI/CD Pipeline Development
+- Cloud Architecture
+- Infrastructure Automation
+- Security & Compliance
+- Cloud Networking
+- Identity & Access Management
+- Python & Bash Scripting
+
 
 Work History
 ----------
 
-**Contracted DevOps Engineer with Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023-04 to Present**
+**Contracted L3 DevOps Engineer with Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023-04 to Present**
 
-As part of the TechOps team, our primary responsibility is to serve as the stewards of the production environment for both the front end UI and back end stack. Techops does regular software deployments coordinating with the developers and quality assurance testing, while also helping end users with problem incidents that lower level support can't resolve. 
+As part of the TechOps team, our primary responsibility is to serve as the stewards of the production environment for both the front end UI (Halo UI) and back end stack (Common Auditing Management System - CAMS). My other duties included managing enterprise CI/CD pipelines through Azure DevOps, ensuring consistent and reliable application deployments.
+I also implemented Kubernetes orchestration with Helm for containerized applications and developed comprehensive Terraform
+automation for infrastructure provisioning. 
+
+Our secondary responsibility was providing operations support in a customer-facing role, resolving incident tickets and troubleshooting complex system issues through extensive Linux administration. Administered data processing workflows using
+Apache Airflow and Databricks.
+Developed Python automation scripts to streamline DevOps processes and performed extensive API testing and integration work
+using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 
 - Tech Stack Highlights:
   - Azure Cloud
   - Airflow
   - Kubernetes
   - Postgres SQL
+  - Azure Databricks
 
 - Change Management via Service NOW
     - Deployed software through Azure pipelines according to runbook specifications
@@ -40,9 +62,9 @@ As part of the TechOps team, our primary responsibility is to serve as the stewa
 
 - General Administration
     - Assisted developers needing special access to systems we managed, or to provide logging information to help with debugging
-    - Update or create new Standard Operating Procedures in Confluence as we find workarounds to recurring issues.  
+    - Updated or created over 40 new Standard Operating Procedures in Confluence.
     - Health checks and alerting for critical systems
-    - Automations for our own team's internal uses
+    - Administered Databricks workspaces and Apache Airflow data pipelines, implementing monitoring solutions that increased data processing reliability and reduced failed job incidents.
 
 --- 
 
@@ -100,32 +122,6 @@ As part of the TechOps team, our primary responsibility is to serve as the stewa
   - Created [ansible playbook](https://github.com/sc-idevops/devops-notes/tree/master/flask-ansible-task) that configured the ec2 instance to run python api by installing python, cloning repository and setting up nginx reverse proxy to server gunicorn on port 80.
   - Deployed and validated python api application with ansible and terraform.
 
-*Linux & Scripting:*
-
-- Strong background in Linux including: shell scripting (bash), git, package management, and general system administration.
-
---*Python Scripts:*
-
-  - Wrote Python script to scrape text from a website and parse it using the Beautifulsoup library to find specific data from the website.
-  - Wrote a Python script that recursively looped over the file system searching for specific files and made a list report of those files.
-  - Wrote Python script to retrieve JSON payloads from REST API.
-
---[*Bash Scripts:*](https://github.com/sc-idevops/devops-notes/tree/master/bash_examples)
-
-  - Wrote Bash Script to take website as input and curl the input as data for automation.
-  - Wrote a Bash Script to make a report of all resources in all subscriptions and resources groups within Azure utilizing the Azure CLI.
-  - Wrote a Bash Script to install Nginx on a Ubuntu machine and update the default HTML file with a pre-built file automating the standup and serving of a basic html file.
-  - Created bash script to template replace variables in config files using environment variables.
-  - Created bash script that dynamically creates terraform to deploy AWS ec2 instances with prompts based on input.
-  
--- *Misc Scripting:*
-
-- Synchronized package installation states over several servers using [Ansible.](https://github.com/sc-idevops/devops-notes/tree/master/ansible)
-- Create script to pull password for use in pipeline using bash. Read from [password.idevops.io](password.idevops.io) and save to variable.
-- Created AWS command to list out all AWS resources using *the AWS cli and JQ*
-- Delete AWS cloud 9 resource using AWS CLI (environment cleanup)
-
-
 [*Redis Project:*](https://github.com/sc-idevops/devops-notes/tree/master/helm)
 
 - Installed Redis Via Helm and tested functionality through Kubernetes port forwarding.
@@ -155,12 +151,6 @@ As part of the TechOps team, our primary responsibility is to serve as the stewa
 - Added automatic SSL generation using cert-manager to our ingress for Django project to serve site on https endpoint
 - Implement regression/UE testing for Django site functionality.
 - Troubleshooting errors in pipeline, ephemeral environments, and UE regression testing to make full CI pipeline work.
-
-[*k8 Softner Project:*](http://k8ssoftner.idevops.io/)
-
-- Designed a webapp that takes user input from a javascript frontend and generates a deployable kubernetes manifest through a python backend.
-- The Python backend processes a JSON payload dynamically through an API.
-- The app is capable of processing replicas, secrets, persistent volume claims, and probes.
 
 --- 
 
