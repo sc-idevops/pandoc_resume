@@ -5,9 +5,7 @@ Stephen M Card
 
 > 2118 Shadyside Rd. Clymer, NY 14724
 
-> [GitHub](https://github.com/sc-idevops)
-
-> [LinkedIn](https://www.linkedin.com/in/stephenmcard/)
+> [GitHub](https://github.com/sc-idevops) | [LinkedIn](https://www.linkedin.com/in/stephenmcard/)
 
 ----
 
