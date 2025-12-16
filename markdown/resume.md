@@ -9,7 +9,11 @@ Stephen M Card
 
 ----
 
-Open Source DevOps Engineer with 10 years of experience specializing in automations and deployment pipelines. Linux user since 2007. Current assignment specializes in Azure based cloud computing but the key core DevOps principles can be applied anywhere. Known for streamlining deployment processes, improving infrastructure efficiency, and having excellent communication.
+DEVOPS ENGINEER & AUTOMATION OPERATOR Specializing in Python Automation, Kubernetes, and is familiar with the Real Estate Industry.
+
+DevOps Engineer with 10 years of total professional experience, combining deep technical expertise in Linux, Kubernetes, and Cloud Automation with a unique background in Real Estate Operations. Currently serving as a contracted DevOps Engineer for PwC, managing large-scale data workflows.
+
+Proven ability to bridge the gap between technical engineering and business goals, seeking to leverage "Operator" mindset and Python proficiency to support CoreLogic’s mission of powering the global real estate economy.
 
 
 Certifications
