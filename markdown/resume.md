@@ -38,7 +38,27 @@ Skillset
 Work History
 ----------
 
-**Contracted L3 DevOps Engineer with Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023-04 to Present**
+**Contracted ML Operator with Adaequare assigned to Cotality: 2026/04 - Present**
+
+Primary Responsibility - ModelX: automated property-valuation (AVM) prediction platform on Google Cloud
+
+Run and oversee the weekly national ModelX prediction run across production environments, covering about 3,100+ U.S. counties. The cycle covers environment cleanup, run setup, condition & quality (C&Q) data, data enrichment, dataprep and validation, the CMP and ENS sub-models, quality control (QC), and the release notice.
+
+Manage compute on Google Kubernetes Engine (GKE) with kubectl. This includes scaling dataprep, distributor and Spark-launcher workloads up and down in stages, clearing failed pods (CrashLoopBackOff, OOMKilled, Evicted), and shutting down Dataproc clusters once work finishes to control cost.
+
+Run workflows in Apache Airflow (DAG variables, enrichment chunk DAGs, the C&Q DAG) and send run configurations to the Distributor service with Postman.
+
+Track run state in CockroachDB with SQL. Diagnose stuck counties and failed sub-model jobs, safely re-queue them, block counties that can’t run, and recover from known issues such as dataprep validation hanging.
+
+Monitor progress with BigQuery SQL and the Pub/Sub message backlog. Run post-run QC: FIPS county counts at each stage, zero-duplicate checks, missing-county checks and subject-count reconciliation, all signed off before the release notice goes out.
+
+Design, develop, and maintain automation scripts that streamline workflows, reduce manual effort, minimize the risk of operational errors, and improve overall efficiency and reliability of production processes.
+
+Maintain the production runbook and operating procedures in Confluence, track run issues and improvements in Jira, and coordinate live in Slack with the data, release and platform teams during runs.
+
+Technical skills: Python, Bash/zsh shell scripting, SQL (BigQuery, CockroachDB), YAML · Google Cloud Platform (GKE, BigQuery, Cloud Storage, Pub/Sub, Dataproc, Dataflow, Cloud Functions, IAM) · Kubernetes/kubectl · Apache Airflow · Postman · HashiCorp Vault · Git/GitHub · Confluence, Jira, Slack
+
+**Contracted L3 DevOps Engineer with Insight Global assigned to Pricewaterhouse Coopers (PwC): 2023/04 - 2026/04**
 
 As part of the TechOps team, our primary responsibility is to serve as the stewards of the production environment for both the front end UI (Halo UI) and back end stack (Common Auditing Management System - CAMS). My other duties included managing enterprise CI/CD pipelines through Azure DevOps, ensuring consistent and reliable application deployments.
 I also implemented Kubernetes orchestration with Helm for containerized applications and developed comprehensive Terraform
@@ -74,7 +94,7 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 
 --- 
 
-**DevOps Engineer:** 2022-01 - 2023-04
+**DevOps Engineer:** 2022/01 - 2023/04
 
 *iDevops, Online*
 
@@ -132,7 +152,7 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 
 --- 
 
-**Office Administrator:** 2016-07 - 2023-04
+**Office Administrator:** 2016/07 - 2023/04
 
 *Howard & Associates Real Estate, Findley Lake, NY*
 
@@ -143,7 +163,7 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 
 --- 
 
-**Information Technology Specialist:** 2015-07 - 2023-04
+**Information Technology Specialist:** 2015/07 - 2023/04
 
 *YMCA Of Corry, Corry, PA*
 
@@ -156,7 +176,7 @@ using Postman and GraphQL, documenting all procedures through Confluence SOPs.
 Education
 ---------
 
-**Bachelor of Science: Computer Science**: 2007-09 - 2011-12
+**Bachelor of Science: Computer Science**: 2007/09 - 2011/12
 
 *SUNY Fredonia - Fredonia, NY*
 
